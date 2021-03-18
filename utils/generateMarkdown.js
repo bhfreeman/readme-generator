@@ -1,6 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  license = license.replace(/\s+/g, '');
   return `![${license}](https://img.shields.io/badge/license-${license}-brightgreen)` || '';
 }
 
@@ -21,46 +22,47 @@ function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
 
-  ##Description
-
+  ## Description
+  \`\`\`md
   ${data.description}
+  \`\`\`
+  ## Table of Contents
 
-  ##Table of Contents
+  *[Installation](#installation)
 
-  -[Installation](#installation)
+  *[Usage](#usage)
 
-  -[Usage](#usage)
+  *[Credits](#credits)
 
-  -[Credits](#credits)
+  *[License](#license)
 
-  -[License](#license)
-  
 
-  ##Installation
-
+  ## Installation
+  \`\`\`md
   ${data.install}
-
-  ##Usage
-
+  \`\`\`
+  ## Usage
+  \`\`\`md
   ${data.usage}
-
+  \`\`\`
   ## Contrigution Guidelines
-
+  \`\`\`md
   ${data.contribution}
-
+  \`\`\`
   ## Testing Instructions
-
+  \`\`\`md
   ${data.test}
-
+  \`\`\`
   ## License
-
+  \`\`\`md
   ${renderLicenseSection(data.license)}
-
+  \`\`\`
   ## Credits
-
+  \`\`\`md
   Github: ${data.github}
 
   Contact me here: ${data.email}
+  \`\`\`
   `;
 }
 
