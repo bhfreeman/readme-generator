@@ -18,7 +18,8 @@ const questions = [
     {
         type: 'input',
         name: 'install',
-        message: 'Enter the projectinstallation instructions:'
+        message: 'What is the command to install the project?',
+        default: 'npm i'
     },
     {
         type: 'input',
@@ -28,18 +29,20 @@ const questions = [
     {
         type: 'input',
         name: 'contribution',
-        message: "What are the contribution guidelines for this project?"
+        message: "What are the contribution guidelines for this project?",
+        default: "Creative common contributions"
     },
     {
         type: 'input',
         name: 'test',
-        message: "What are the testing instructions for the project?"
+        message: "What is the command for testing? ",
+        default: 'npm test'
     },
     {
         type: 'list',
         name: 'license',
         message: "What license does the project fall under?",
-        choices: ["GNU AGPLv3","GNU GPLv3","GNU LGPLv3","Mozilla Public License 2.0","Apache License 2.0","MIT License","Boost Software License 1.0","The Unlicense"]
+        choices: ['MIT','APACHE 2.0','GPL 3.0','BSD 3','None']
     },
     {
         type: 'input',
@@ -55,7 +58,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(`./readmes/README.md`,data, (err) => console.log(err) || console.log("worked"))
+    fs.writeFile(`./generated_readme/README.md`,data, (err) => console.log(err) || console.log("worked"))
 }
 
 // TODO: Create a function to initialize app
