@@ -1,9 +1,9 @@
-# c
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# new project
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Description
 ```md
-c
+new description
 ```
 ## Table of Contents
 
@@ -11,36 +11,37 @@ c
 
 [Usage](#usage)
 
-[Credits](#credits)
-
 [License](#license)
 
+[Contact](#questions)
 
 ## Installation
+To install necessary dependencies, run the following command:
 ```md
-c
+npm i
 ```
 ## Usage
 ```md
-c
+usage
 ```
-## Contrigution Guidelines
+## Contribution Guidelines
 ```md
-c
+Creative common contributions
 ```
 ## Testing Instructions
+To run tests, run the following command:
 ```md
-c
+npm test
 ```
 ## License
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 ```md
-This project is licensed under the GPL 3.0 license
+This project is licensed under the BSD 3 license
 ```
-## Credits
+## Questions
+If you have any questions about the repo, open an issue of contact me directly at:
 ```md
-Github: c
-
-Contact me here: c
+brett@brett.com
 ```
+You can find more of my work at: [bhfreeman](https://github.com/bhfreeman/)
   

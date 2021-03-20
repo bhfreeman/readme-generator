@@ -1,15 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  // const badges = {
-  //   'MIT': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
-  //   'APACHE 2.0': '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
-  //   'GPL 3.0': '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
-  //   'BSD 3': '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)',
-  //   'None': ''
-  // }
-  // const md = badges.license;
-  //   return md;
   switch (license) {
     case 'MIT':
       return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
@@ -62,10 +53,9 @@ ${data.description}
 
 [Usage](#usage)
 
-[Credits](#credits)
-
 [License](#license)
 
+[Contact](#questions)
 
 ## Installation
 To install necessary dependencies, run the following command:
@@ -95,10 +85,7 @@ If you have any questions about the repo, open an issue of contact me directly a
 \`\`\`md
 ${data.email}
 \`\`\`
-You can find more of my work at:
-\`\`\`md
-[${data.github}](https://github.com/${data.github}/).
-\`\`\`
+You can find more of my work at: [${data.github}](https://github.com/${data.github}/)
   `;
 }
 
