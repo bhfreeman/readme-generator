@@ -12,3 +12,6 @@ Built using node.js and the inquirer package
 
 ## Github link to generated README.md file
 [README.MD](https://github.com/bhfreeman/readme-generator/blob/main/generated_readme/README.md)
+
+## Link to Walk through video
+[Walkthrough](https://youtu.be/cEoGw7HlAYc)
